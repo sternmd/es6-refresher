@@ -16,6 +16,22 @@ person.name = 'Jack'; // valid
 nums.push(5); // valid
 
 // arrow functions
+// function sayHello() {
+//   console.log('hello');
+// }
+
+// one line
+const sayHello = () => console.log('hello');
+
+// param
+const sayWhat = name => console.log(name);
+
+// params
+const sayWhat = (name, time) => console.log(name);
+
+// template literals
+const sayHi = name => console.log(`Hello ${name}`);
+sayHello();
 
 // for each
 
