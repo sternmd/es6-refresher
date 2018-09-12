@@ -27,15 +27,19 @@ const sayHello = () => console.log('hello');
 const sayWhat = name => console.log(name);
 
 // params
-const sayWhat = (name, time) => console.log(name);
+const sayWhat2 = (name, time) => console.log(name);
 
 // template literals
 const sayHi = name => console.log(`Hello ${name}`);
 sayHello();
 
 // for each
+const fruits = ['apples', 'oranges', 'grapes'];
+fruits.forEach((fruit, index) => console.log(fruit));
 
 // map
+const singleFruit = fruits.map((fruit) => fruit.slice(0, -1));
+console.log(singleFruit)
 
 // filter
 
