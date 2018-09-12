@@ -42,6 +42,16 @@ const singleFruit = fruits.map((fruit) => fruit.slice(0, -1));
 console.log(singleFruit)
 
 // filter
+// returns an array with things filtered out
+const people = [
+  {id: 1, name: 'Karen'},
+  {id: 2, name: 'Bob'},
+  {id: 3, name: 'Mike'}
+];
+
+// return a new array
+const people2 = people.filter(person => person.id !== 2);
+console.log(people2);
 
 // spread
 
