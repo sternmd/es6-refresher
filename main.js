@@ -54,6 +54,24 @@ const people2 = people.filter(person => person.id !== 2);
 console.log(people2);
 
 // spread
+const arr = [1, 2, 3];
+const arr2 = [...arr, 4];
+const arr3 = [...arr.filter(num => num !== 2)];
+
+console.log(arr2);
+console.log('arr3: ', arr3)
+
+const obj = {
+  name: 'Max',
+  age: 26
+}
+
+const obj2 = {
+  ...obj,
+  email: 'gmail'
+}
+
+console.log(obj2)
 
 // destructuring
 
