@@ -74,6 +74,19 @@ const obj2 = {
 console.log(obj2)
 
 // destructuring
+const profile = {
+  person1: 'john doe',
+  address: {
+    street: '40 main street',
+    city: 'evanston',
+  },
+  hobbies: ['movies', 'music']
+}
+
+const { person1, address, hobbies } = profile
+const { street } = profile.address;
+
+console.log(person1, address, hobbies, street);
 
 // classes
 
