@@ -89,7 +89,31 @@ const { street } = profile.address;
 console.log(person1, address, hobbies, street);
 
 // classes
+// functional components vs class-based components
+class Person {
+  // properties
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  // methods
+  greet() {
+    return `Hello my name is ${this.name} and I am ${this.age}`;
+  }
+}
+
+const person3 = new Person('John', 22);
 
 // subclasses
+class Customer extends Person {
+  constructor(name, age, balance) {
+    super(name, age);// inherits properties from Person (name, age)
+    this.balance = balance;
+  }
+}
 
+
+const customer1 = new Customer('Kris', 44, 300);
+console.log(customer1.name);
 // modules
